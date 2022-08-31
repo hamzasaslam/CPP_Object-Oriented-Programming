@@ -1,0 +1,30 @@
+//Use of Constructors
+#include <iostream>
+using namespace std;
+class Film
+{
+public:
+    string Name, Actor, Singer, Director;
+    void details_of_the_Film()
+    {
+        cout << Name << "\t" << Singer << "\t" << Singer << "\t" << Director << "\n";
+    }
+    Film(string name, string actor, string singer, string director)
+    {
+        Name = name;
+        Actor = actor;
+        Singer = singer;
+        Director = director;
+    }
+};
+int main()
+{
+    Film filmA = Film("Slum dog Milionare", "Johny Depp", "A.R Rehman", "Hamza");
+    filmA.details_of_the_Film();
+    Film filmB = Film("titanic", "John", "atif", "mike");
+    filmB.details_of_the_Film();
+    Film filmC = Film("Bahuballi", "Non", "Elvi", "Tyson");
+    filmC.details_of_the_Film();
+   
+    return 0;
+}
