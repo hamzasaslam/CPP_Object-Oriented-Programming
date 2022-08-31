@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class Employee
+{
+public:
+    string Name, Designation;
+    int Employeeid;
+    void CheckAttendence()
+    {
+        cout << Name << "\n"
+             << Designation << "\n"
+             << Employeeid << "\n";
+    }
+};
+int main()
+{
+    Employee employee1, employee2;
+    employee1.Name = "Hamza Aslam";
+    employee1.Designation = "Programmer";
+    employee1.Employeeid = 1132;
+    employee1.CheckAttendence();
+    employee2.Name = "Johny Depp";
+    employee2.Designation = "Manager";
+    employee2.Employeeid = 112;
+    employee2.CheckAttendence();
+    return 0;
+}
