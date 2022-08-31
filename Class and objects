@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+class Student // class definition
+{
+
+public: // Access Specifier
+    // Attributes
+    string name, section;
+    int age;
+    // Methods
+    void introductyourself()
+    {
+        cout << name << "\t" << age << "\t" << section << endl;
+    }
+};
+int main()
+{
+    Student st; // objects
+    // Assigning the values to the obect attributes
+
+    st.name = "Hamza";
+    st.age = 25;
+    st.section = "Facebook";
+    st.introductyourself();
+}
+//output will be Hamza  25  Facebook
